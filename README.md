@@ -1,2 +1,0 @@
-# aleksandr-site
-Landing page — auto-deployed
