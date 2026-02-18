@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Александр — Грузоперевозки</title>
-  <meta name="description" content="Перевезём любые вещи, мебель, технику, стёкла, зеркала. По городу и в область. Цена договорная.">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap');
+  <title>Aleksandr — Грузоперевозки</title>
+  <meta name="description" content="Гpузопepeвoзки, доставка, перeезды пo Кaлинингpадскoй oблacти. Boдитeль-гpузчик. Для бeрежной пeрeвoзки eсть стяжки. Есть 2 пассажирcкиx мecтa. 📌Габapиты грузовoгo oтcекa: Длинa - 3,1 м Высота - 1.7м Шиpинa - 1,8 м Oбъем - 9 м3 Гpузопoдьeмн.">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap');
 :root {
-  --bg:#0b0f19;--surface:#131a2a;--text:#f1f5f9;--muted:#94a3b8;
-  --primary:#f59e0b;--accent:#fb7185;--dark:#05070d;
-  --font-body:'Outfit',system-ui,sans-serif;
-  --font-title:'Sora','Outfit',system-ui,sans-serif;
+  --bg:#f7fcfa;--surface:#ffffff;--text:#102a23;--muted:#4a6b5f;
+  --primary:#0f766e;--accent:#22c55e;--dark:#0b1e1a;
+  --font-body:'Plus Jakarta Sans',system-ui,sans-serif;
+  --font-title:'Poppins','Plus Jakarta Sans',system-ui,sans-serif;
   --radius:16px;--shadow:0 20px 60px rgba(2,6,23,.12);
 }
 * { box-sizing:border-box; }
@@ -201,28 +201,24 @@ input,textarea { width:100%; border-radius:12px; border:1.5px solid color-mix(in
         .btn { border-radius: 14px; }
         
 
-        .timeline article,.rows article { border-left: 3px solid color-mix(in oklab, var(--primary) 45%, transparent); }
+        .section--muted { background: color-mix(in oklab, var(--dark) 84%, var(--surface) 16%); }
+        .cards article,.service-list article,.rows article,.prices article,.timeline article {
+          background: color-mix(in oklab, var(--surface) 40%, var(--dark) 60%);
+        }
         
   </style>
 </head>
 <body>
   
-<header class="header header--transparent">
-  <div class="container navrow"><div class="logo">Александр</div><span class="logo-kicker">ГРУЗОПЕРЕВОЗКИ</span><nav><a href="#services">Услуги</a><a href="#works">Портфолио</a><a href="#reviews">Отзывы</a></nav><a class="btn btn--ghost" href="tel:+7 (900) 000-00-00">+7 (900) 000-00-00</a></div>
+<header class="header header--classic">
+  <div class="container navrow"><div class="logo">Aleksandr</div><span class="logo-kicker">ГРУЗОПЕРЕВОЗКИ</span><nav><a href="#services">Услуги</a><a href="#works">Работы</a><a href="#reviews">Отзывы</a><a href="#contact">Контакты</a></nav><a class="btn btn--sm" href="tel:+7 (900) 000-00-00">+7 (900) 000-00-00</a></div>
 </header>
 
-        <div class="avito-meta"><span>YT:oakville_demo_package_wordpress</span><span>Kaliningrad</span><span>+7 (900) 000-00-00</span></div>
+        <div class="avito-meta"><span>YT:tech-space_demo_package_wordpress</span><span>Kaliningrad</span><span>+7 (900) 000-00-00</span></div>
   
-<section class="hero hero--glass" style="--hero:url('photo_1.jpg')">
-  <div class="container">
-    <div class="glass">
-      <p class="eyebrow">ГРУЗОПЕРЕВОЗКИ 24/7</p>
-      <h1>Александр</h1>
-      <p>Перевезём любые вещи, мебель, технику, стёкла, зеркала. По городу и в область. Цена договорная.</p>
-      <div class="stats"><div><strong>10+</strong><span>лет опыта</span></div><div><strong>8 000+</strong><span>переездов</span></div><div><strong>4.9</strong><span>рейтинг</span></div></div>
-      <a class="btn" href="tel:+7 (900) 000-00-00">Позвонить сейчас</a>
-    </div>
-  </div>
+<section class="hero hero--diag">
+  <div class="hero__diag-left"><div class="inner"><p class="eyebrow">ЛОГИСТИКА НОВОГО УРОВНЯ</p><h1>Aleksandr</h1><p>Гpузопepeвoзки, доставка, перeезды пo Кaлинингpадскoй oблacти. Boдитeль-гpузчик. Для бeрежной пeрeвoзки eсть стяжки. Есть 2 пассажирcкиx мecтa. 📌Габapиты грузовoгo oтcекa: Длинa - 3,1 м Высота - 1.7м Шиpинa - 1,8 м Oбъем - 9 м3 Гpузопoдьeмн.</p><a class="btn" href="tel:+7 (900) 000-00-00">Рассчитать стоимость</a></div></div>
+  <div class="hero__diag-right" style="background-image:url('photo_1.jpg')"></div>
 </section>
 
   
@@ -254,10 +250,17 @@ input,textarea { width:100%; border-radius:12px; border:1.5px solid color-mix(in
 </section>
 
   
-<section id="works" class="section works-story">
-  <div class="container grid2">
-    <div class="story"><h2>Портфолио реальных задач</h2><p>Сложные переезды, хрупкие грузы, срочные маршруты. Каждый кейс мы ведём по чек-листу.</p><ul><li>Переезд 4-комнатной квартиры за 1 день</li><li>Офис 80 рабочих мест за выходные</li><li>Перевозка складского оборудования</li></ul></div>
-    <div class="story-grid"><img src="photo_2.jpg" alt=""><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1600&auto=format&fit=crop" alt=""><img src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=1200&auto=format&fit=crop" alt=""><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format&fit=crop" alt=""></div>
+<section id="works" class="section">
+  <div class="container">
+    <h2>Портфолио</h2>
+    <div class="masonry">
+      <img src="photo_2.jpg" alt="">
+      <img src="photo_3.jpg" alt="">
+      <img src="photo_4.jpg" alt="">
+      <img src="photo_5.jpg" alt="">
+      <img src="photo_6.jpg" alt="">
+      <img src="photo_7.jpg" alt="">
+    </div>
   </div>
 </section>
 
@@ -287,22 +290,21 @@ input,textarea { width:100%; border-radius:12px; border:1.5px solid color-mix(in
 </section>
 
   
-<section id="contact" class="lead lead--floating">
-  <div class="container">
-    <div class="panel-floating">
-      <h2>Рассчитайте стоимость переезда</h2>
-      <form class="js-form" data-bot-token="8434584674:AAGvxeQulQDyaESBQeu7rF5siC6HHs2McrE" data-chat-id="549333404">
-        <div class="fgrid"><input name="name" placeholder="Имя" required><input name="phone" placeholder="Телефон" required></div>
-        <textarea name="message" rows="4" placeholder="Адреса и детали"></textarea>
-        <button type="submit" class="btn">Получить расчёт</button>
-      </form>
-    </div>
+<section id="contact" class="lead lead--split">
+  <div class="lead__info"><h2>Aleksandr</h2><p>Оставьте заявку — перезвоним за 5 минут.</p><a href="tel:+7 (900) 000-00-00">+7 (900) 000-00-00</a></div>
+  <div class="lead__form">
+    <form class="js-form" data-bot-token="8434584674:AAGvxeQulQDyaESBQeu7rF5siC6HHs2McrE" data-chat-id="549333404">
+      <input name="name" placeholder="Ваше имя" required>
+      <input name="phone" placeholder="Телефон" required>
+      <textarea name="message" rows="4" placeholder="Что перевозим и куда?"></textarea>
+      <button type="submit" class="btn">Отправить заявку</button>
+    </form>
   </div>
 </section>
 
   
 <footer class="footer">
-  <div class="container footer__row"><strong>Александр</strong><span>© 2026. Все права защищены.</span></div>
+  <div class="container footer__row"><strong>Aleksandr</strong><span>© 2026. Все права защищены.</span></div>
 </footer>
 <a class="sticky-call" href="tel:+79000000000">📞</a>
 <a class="sticky-tg" href="https://t.me/+79000000000">✈️</a>
