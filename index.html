@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Александр — Грузоперевозки</title>
-  <meta name="description" content="Гpузoпеpевoзки, доставка. Длина 4,2м Ширинa 1,7м Выcота 1,8м Грузoподъeмнocть до 1,5т Paбoтaeм без посpедникoв, быcтpо, качественно. Доставкa cтpoй мaтеpиaла, мебeли, тexники. Дoстaвкa до 6м Возможнa пoдaча c грузчикaми и бeз (обгoвaриваeтс.">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap');
+  <meta name="description" content="Перевезём любые вещи, мебель, технику, стёкла, зеркала. По городу и в область. Цена договорная.">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap');
 :root {
-  --bg:#f8f7ff;--surface:#ffffff;--text:#1e1b4b;--muted:#5b5b88;
-  --primary:#6d28d9;--accent:#ec4899;--dark:#0f0a24;
-  --font-body:'Figtree',system-ui,sans-serif;
-  --font-title:'Space Grotesk','Figtree',system-ui,sans-serif;
+  --bg:#0b0f19;--surface:#131a2a;--text:#f1f5f9;--muted:#94a3b8;
+  --primary:#f59e0b;--accent:#fb7185;--dark:#05070d;
+  --font-body:'Outfit',system-ui,sans-serif;
+  --font-title:'Sora','Outfit',system-ui,sans-serif;
   --radius:16px;--shadow:0 20px 60px rgba(2,6,23,.12);
 }
 * { box-sizing:border-box; }
@@ -207,30 +207,33 @@ input,textarea { width:100%; border-radius:12px; border:1.5px solid color-mix(in
 </head>
 <body>
   
-<header class="header header--split">
-  <div class="topbar"><div class="container topbar__row"><span>Работаем 24/7 • Подача от 30 минут</span><a href="tel:+7 (900) 000-00-00">+7 (900) 000-00-00</a></div></div>
-  <div class="container navrow"><div class="logo">Александр</div><span class="logo-kicker">ГРУЗОПЕРЕВОЗКИ</span><nav><a href="#services">Услуги</a><a href="#works">Портфолио</a><a href="#reviews">Отзывы</a><a href="#contact">Контакты</a></nav><a class="btn btn--sm" href="tel:+7 (900) 000-00-00">Позвонить</a></div>
+<header class="header header--transparent">
+  <div class="container navrow"><div class="logo">Александр</div><span class="logo-kicker">ГРУЗОПЕРЕВОЗКИ</span><nav><a href="#services">Услуги</a><a href="#works">Портфолио</a><a href="#reviews">Отзывы</a></nav><a class="btn btn--ghost" href="tel:+7 (900) 000-00-00">+7 (900) 000-00-00</a></div>
 </header>
 
-        <div class="avito-meta"><span>YT:gravity-tower_demo_package_wordpress</span><span>Kaliningrad</span><span>+7 (900) 000-00-00</span></div>
+        <div class="avito-meta"><span>YT:oakville_demo_package_wordpress</span><span>Kaliningrad</span><span>+7 (900) 000-00-00</span></div>
   
-<section class="hero hero--minimal" style="--hero:url('photo_1.jpg')">
-  <div class="overlay"></div>
-  <div class="container hero__content">
-    <h1>Александр</h1>
-    <p>Гpузoпеpевoзки, доставка. Длина 4,2м Ширинa 1,7м Выcота 1,8м Грузoподъeмнocть до 1,5т Paбoтaeм без посpедникoв, быcтpо, качественно. Доставкa cтpoй мaтеpиaла, мебeли, тexники. Дoстaвкa до 6м Возможнa пoдaча c грузчикaми и бeз (обгoвaриваeтс.</p>
-    <div class="hero__actions"><a class="btn" href="#contact">Получить предложение</a></div>
+<section class="hero hero--glass" style="--hero:url('photo_1.jpg')">
+  <div class="container">
+    <div class="glass">
+      <p class="eyebrow">ГРУЗОПЕРЕВОЗКИ 24/7</p>
+      <h1>Александр</h1>
+      <p>Перевезём любые вещи, мебель, технику, стёкла, зеркала. По городу и в область. Цена договорная.</p>
+      <div class="stats"><div><strong>10+</strong><span>лет опыта</span></div><div><strong>8 000+</strong><span>переездов</span></div><div><strong>4.9</strong><span>рейтинг</span></div></div>
+      <a class="btn" href="tel:+7 (900) 000-00-00">Позвонить сейчас</a>
+    </div>
   </div>
 </section>
 
   
-<section id="services" class="section">
+<section id="services" class="section section--muted">
   <div class="container">
-    <h2>Почему нас выбирают</h2>
-    <div class="rows">
-      <article><h3>Материальная ответственность</h3><p>Фиксируем состояние имущества и отвечаем по договору.</p></article>
-      <article><h3>Точная подача без опозданий</h3><p>Планируем маршрут и соблюдаем сроки даже в пиковые часы.</p></article>
-      <article><h3>Опытные грузчики</h3><p>Команды с практикой перевозки сложных и хрупких грузов.</p></article>
+    <h2>Ключевые услуги</h2>
+    <div class="cards cards--4">
+      <article><h3>Переезды квартир</h3><p>Аккуратная упаковка и перенос сложных предметов.</p></article>
+      <article><h3>Офисные переезды</h3><p>Работаем в ночные и выходные окна без простоев.</p></article>
+      <article><h3>Грузчики</h3><p>От одного специалиста до полной бригады.</p></article>
+      <article><h3>Междугород</h3><p>Надёжная перевозка по РФ с контролем этапов.</p></article>
     </div>
   </div>
 </section>
@@ -251,17 +254,10 @@ input,textarea { width:100%; border-radius:12px; border:1.5px solid color-mix(in
 </section>
 
   
-<section id="works" class="section">
-  <div class="container">
-    <h2>Портфолио</h2>
-    <div class="masonry">
-      <img src="photo_2.jpg" alt="">
-      <img src="photo_3.jpg" alt="">
-      <img src="photo_4.jpg" alt="">
-      <img src="photo_5.jpg" alt="">
-      <img src="photo_6.jpg" alt="">
-      <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1600&auto=format&fit=crop" alt="">
-    </div>
+<section id="works" class="section works-story">
+  <div class="container grid2">
+    <div class="story"><h2>Портфолио реальных задач</h2><p>Сложные переезды, хрупкие грузы, срочные маршруты. Каждый кейс мы ведём по чек-листу.</p><ul><li>Переезд 4-комнатной квартиры за 1 день</li><li>Офис 80 рабочих мест за выходные</li><li>Перевозка складского оборудования</li></ul></div>
+    <div class="story-grid"><img src="photo_2.jpg" alt=""><img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1600&auto=format&fit=crop" alt=""><img src="https://images.unsplash.com/photo-1557838923-2985c318be48?w=1200&auto=format&fit=crop" alt=""><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=1200&auto=format&fit=crop" alt=""></div>
   </div>
 </section>
 
